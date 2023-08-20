@@ -484,12 +484,12 @@ security constraints, notably `@PreAuthorize` and `@PostAuthorize`,
 which let you write expressions containing references to method
 parameters and return values, respectively.
 
-TIP: It is not uncommon to combine Web security and method
+It is not uncommon to combine Web security and method
 security. The filter chain provides the user experience features, such as
 authentication and redirect to login pages and so on, and the method
 security provides protection at a more granular level.
 
-== Working with Threads
+ Working with Threads
 
 Spring Security is fundamentally thread-bound, because it needs to make
 the current authenticated principal available to a wide variety of
@@ -555,7 +555,7 @@ This can sometimes be useful if you need to write code that works when
 Spring Security is not in use (you would need to be more defensive
 about loading the `Authentication` class).
 
-=== Processing Secure Methods Asynchronously
+Processing Secure Methods Asynchronously
 
 Since the `SecurityContext` is thread-bound, if you want to do any
 background processing that calls secure methods (for example, with `@Async`),

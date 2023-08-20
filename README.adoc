@@ -435,7 +435,7 @@ container, either embedded or otherwise. It is not, however, tied to
 Spring MVC or the rest of the Spring web stack, so it can be used in
 any servlet application -- for instance, one using JAX-RS.
 
-== Method Security
+Method Security
 
 As well as support for securing web applications, Spring Security
 offers support for applying access rules to Java method
